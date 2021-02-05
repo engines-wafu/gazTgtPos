@@ -16,10 +16,10 @@ printf("|  1.  Select 'PP' on the NADIR then 'GEL' to copy location.   |\n");
 printf("|  2.  Select 'BUT' then choose a waypoint to use.             |\n");
 printf("|  3.  Press 'ENT' to paste position into selected waypoint.   |\n");
 printf("|  4.  Press 'UTM/GEO' and enter the displayed value below.    |\n");
-printf("|  5.  Select 'CM/DEC' and enter the bottom displayed value    |\n");
-printf("|  below.                                                      |\n");
-printf("|  6.  Get the current zone by pressing 'DOWN' on the waypoint |\n");
+printf("|  5.  Get the current zone by pressing 'DOWN' on the waypoint |\n");
 printf("|  while in the edit mode.                                     |\n");
+printf("|  6.  Select 'CM/DEC' and enter the bottom displayed value    |\n");
+printf("|  below.                                                      |\n");
 printf("|  7.  Using NADIR, note bearing and range of target, enter    |\n");
 printf("|  this information below.                                     |\n");
 printf("|                                                              |\n");
@@ -54,15 +54,6 @@ function print_tartget (a, b, dec, zone, rng, brg)
   printf("Target UTM E: %i\n", roundb(b_t));
   mgrs = mgrs_fwd(b_t*10, a_t*10, zone, 1, 3);
   printf("MGRS:         %s\n", cell2mat(mgrs));
-##  ll = utm2ll(b_t*10, a_t*10, zone);
-##  latdeg = degrees2dms(ll)(2,1);
-##  latmin = degrees2dms(ll)(2,2);
-##  latsec = degrees2dms(ll)(2,3);
-##  longdeg = degrees2dms(ll)(1,1);
-##  longmin = degrees2dms(ll)(1,2);
-##  longsec = degrees2dms(ll)(1,3);
-##  printf("Target Lon:   N%d %d.%i\n", longdeg, longmin, roundb(longsec));
-##  printf("Target Lat:   E%d %d.%i\n", latdeg, latmin, roundb(latsec));
 endfunction
 
 function [choice] = user_choose

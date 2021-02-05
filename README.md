@@ -10,6 +10,12 @@ The intent is for this tool to be used by SA342 pilots in the CAS, JTAC, and FAC
 
 TBC
 
+### Windows 10
+
+### Linux
+
+### Mac
+
 ## Usage
 
 TBC
