@@ -9,7 +9,7 @@ printf("|       GAZELLE TARGET POSITION COORDINATE CALCULATOR          |\n");
 printf("+==============================================================+\n");
 printf("|                                                              |\n");
 printf("|  Author:  Engines                                            |\n");
-printf("|  Version: 0.1                                                |\n");
+printf("|  Version: 0.2                                                |\n");
 printf("|  Date:    5 Feb 21                                           |\n");
 printf("|                                                              |\n");
 printf("|  1.  Select 'PP' on the NADIR then 'GEL' to copy location.   |\n");
