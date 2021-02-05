@@ -2,6 +2,7 @@
 clear;
 choice = 0;
 pkg load mapping;
+addpath("libraries")
 
 printf("+==============================================================+\n");
 printf("|       GAZELLE TARGET POSITION COORDINATE CALCULATOR          |\n");
@@ -65,7 +66,8 @@ function print_tartget (a, b, dec, zone, rng, brg)
 endfunction
 
 function [choice] = user_choose
-  choice = input("\nNew target from same location [1], new location [2], or quit [c-c]?\n");
+  choice = input("\nNew target from same location [1], new location [2], or quit [C-c]? ");
+  printf("\n");
 endfunction
 
 while (choice != 1 || choice != 2)
